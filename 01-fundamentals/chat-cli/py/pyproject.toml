@@ -1,5 +1,5 @@
 [project]
-name = "setup-hello"
+name = "chat-cli"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = ["journey-shared"]

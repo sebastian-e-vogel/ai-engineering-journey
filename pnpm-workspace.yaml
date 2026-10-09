@@ -1,0 +1,5 @@
+# Every TS project of the journey lives in one pnpm workspace.
+# Run `pnpm install` once at the repo root; each folder can then use @journey/shared.
+packages:
+  - "*/ts"     # shared/ts, 00-setup/ts
+  - "*/*/ts"   # 01-fundamentals/chat-cli/ts and every future exercise

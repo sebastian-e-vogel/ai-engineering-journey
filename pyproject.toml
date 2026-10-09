@@ -1,0 +1,4 @@
+# uv workspace: every Python project of the journey shares one lockfile and one .venv.
+# Run `uv sync --all-packages` once at the repo root; each folder can then import journey_shared.
+[tool.uv.workspace]
+members = ["shared/py", "*/py", "*/*/py"]

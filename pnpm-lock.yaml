@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      openai:
-        specifier: ^7.30.1
-        version: 7.30.1
     devDependencies:
       '@types/node':
         specifier: ^26.6.4
@@ -21,6 +17,35 @@ importers:
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
+
+  00-setup/ts:
+    dependencies:
+      '@journey/shared':
+        specifier: workspace:*
+        version: link:../../shared/ts
+    devDependencies:
+      tsx:
+        specifier: ^4.23.15
+        version: 4.23.15
+
+  01-fundamentals/chat-cli/ts:
+    dependencies:
+      '@journey/shared':
+        specifier: workspace:*
+        version: link:../../../shared/ts
+    devDependencies:
+      tsx:
+        specifier: ^4.23.15
+        version: 4.23.15
+
+  shared/ts:
+    dependencies:
+      js-tiktoken:
+        specifier: ^1.0.21
+        version: 1.0.21
+      openai:
+        specifier: ^7.31.0
+        version: 7.31.0
 
 packages:
 
@@ -303,6 +328,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  base64-js@1.5.1:
+    resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
+
   esbuild@0.28.2:
     resolution: {integrity: sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==}
     engines: {node: '>=18'}
@@ -313,8 +341,11 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  openai@7.30.1:
-    resolution: {integrity: sha512-YgiPjBgXdItqTsgAR138bu9aHxBb3/L7qiiP8ucU8e9msRfF8cjRtp8y5qYW7E3Oe9O8UWejQZERf37dtdvoTg==}
+  js-tiktoken@1.0.21:
+    resolution: {integrity: sha512-biOj/6M5qdgx5TKjDnFT1ymSpM5tbd3ylwDtrQvFQSu0Z7bBYko2dF+W/aUkXUPuk6IVpRxk/3Q2sHOzGlS36g==}
+
+  openai@7.31.0:
+    resolution: {integrity: sha512-ZGAzauuYb0DdB53qVbIR+X8rdmNtWgiElrrMthbZCVreLcIsQJBwzAIWUbpB2FkQu2Cj6OJ9zJR1EKMUYn4/SQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@aws-sdk/credential-provider-node': '>=3.972.0 <4'
@@ -494,6 +525,8 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
+  base64-js@1.5.1: {}
+
   esbuild@0.28.2:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.28.2
@@ -526,7 +559,11 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  openai@7.30.1: {}
+  js-tiktoken@1.0.21:
+    dependencies:
+      base64-js: 1.5.1
+
+  openai@7.31.0: {}
 
   tsx@4.23.15:
     dependencies:

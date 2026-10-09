@@ -1,10 +1,10 @@
 {
-  "name": "00-setup",
+  "name": "chat-cli",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "hello": "tsx hello.ts"
+    "chat": "tsx chat.ts"
   },
   "dependencies": {
     "@journey/shared": "workspace:*"
