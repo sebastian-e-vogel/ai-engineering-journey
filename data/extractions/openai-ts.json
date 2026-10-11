@@ -1,0 +1,154 @@
+[
+  {
+    "file": "01-anthropic-applied-ai-engineer-enterprise-tech.txt",
+    "source": "greenhouse:anthropic/5057647008",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "Claude API",
+        "LLMs",
+        "Python",
+        "TypeScript",
+        "MCP",
+        "GPT-3"
+      ],
+      "required_skills": [
+        "4+ years of experience in a technical role",
+        "Production experience with LLMs, including prompt engineering, agent development and frameworks, evaluation frameworks, transcript analysis, MCP, and deployment at scale",
+        "Proficiency in Python or TypeScript",
+        "Experience building production applications",
+        "Ability to navigate ambiguity and execute across domains",
+        "Cross-organizational collaboration",
+        "Strong communication skills"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003384"
+  },
+  {
+    "file": "02-anthropic-applied-ai-engineer-enterprise.txt",
+    "source": "greenhouse:anthropic/5354765008",
+    "extracted": {
+      "seniority": "senior",
+      "remote": false,
+      "stack": [
+        "Claude",
+        "Claude Platform",
+        "LLMs"
+      ],
+      "required_skills": [
+        "6+ years of experience as a software engineer, solutions architect, forward deployed engineer, or technical founder",
+        "Pre-sales or technical advisory experience selling into large enterprises",
+        "Owning technical evaluations, proofs of concept, and security, legal, and procurement due diligence",
+        "Value-based selling and presenting business cases to C-level and VP-level stakeholders",
+        "Production experience with LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale",
+        "Familiarity with enterprise security, compliance, and architecture requirements",
+        "Ability to explain complex AI concepts to technical and executive audiences"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003474"
+  },
+  {
+    "file": "03-anthropic-applied-ai-engineer-startups.txt",
+    "source": "greenhouse:anthropic/5432575008",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "Python",
+        "Claude Developer Platform",
+        "GPT-3"
+      ],
+      "required_skills": [
+        "4+ years of experience as a Software Engineer, Forward Deployed Engineer, or technical founder",
+        "Experience in a customer-facing or pre-sales technical role, partnering with customers to scope, design, and deliver solutions",
+        "Production experience building LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale",
+        "Strong programming skills and experience building production applications",
+        "Experience working with high-growth, tech-forward companies",
+        "Ability to context-switch across industries and use cases",
+        "Builder credibility from shipping products and working with technical founders and engineering leaders",
+        "Strong technical communication skills to translate AI concepts into architectural decisions and implementation plans",
+        "Experience facilitating technical workshops, hackathons, or developer-focused events",
+        "Passion for making powerful technology safe and beneficial"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003399"
+  },
+  {
+    "file": "04-anthropic-applied-ai-engineer-public-sector.txt",
+    "source": "greenhouse:anthropic/5445410008",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "Python",
+        "TypeScript",
+        "Claude Code",
+        "Claude API",
+        "Claude for Enterprise",
+        "MCP"
+      ],
+      "required_skills": [
+        "Active TS/SCI clearance with Polygraph",
+        "Prior experience within US intelligence community agencies as a government civilian or cleared contractor",
+        "4+ years of experience in a technical role",
+        "Strong programming skills in Python or TypeScript",
+        "Experience building production applications",
+        "Hands-on expertise in at least one listed domain: cyber operations, cryptography and cryptanalysis, intelligence analysis and ISR, mission and weapons systems, CBRN and nonproliferation, or classified systems accreditation",
+        "Exceptional communication skills"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003373"
+  },
+  {
+    "file": "05-databricks-ai-engineer-forward-deployed-engineering-ai-fde.txt",
+    "source": "greenhouse:databricks/8546367002",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "Hugging Face",
+        "LangChain",
+        "DSPy",
+        "pandas",
+        "scikit-learn",
+        "PyTorch",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Databricks Intelligence Platform",
+        "Apache Spark",
+        "GenAI",
+        "LLMOps",
+        "RAG",
+        "Text2SQL",
+        "Databricks Genie",
+        "Lakebase",
+        "Agent Bricks",
+        "Lakeflow",
+        "Lakehouse",
+        "Unity Catalog"
+      ],
+      "required_skills": [
+        "Building GenAI applications, including RAG, multi-agent systems, Text2SQL, and fine-tuning",
+        "Deploying production-grade GenAI applications, including evaluation and optimization",
+        "Hands-on industry data science experience using machine learning and data science tools",
+        "Building production-grade machine learning deployments on AWS, Azure, or GCP",
+        "Graduate degree in a quantitative discipline or equivalent practical experience",
+        "Communicating and teaching technical concepts to technical and non-technical audiences",
+        "Collaboration, lifelong learning, and driving business value through AI"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.00047"
+  }
+]

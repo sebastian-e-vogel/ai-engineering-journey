@@ -1,0 +1,20 @@
+{
+  "name": "job-extraction",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "tsx extract-openai.ts",
+    "extract:ai-sdk": "tsx extract-ai-sdk.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.91",
+    "@journey/shared": "workspace:*",
+    "ai": "^7.0.137",
+    "openai": "^7.31.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "file": "01-anthropic-applied-ai-engineer-enterprise-tech.txt",
+    "source": "greenhouse:anthropic/5057647008",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "Claude API",
+        "LLMs",
+        "Python",
+        "TypeScript",
+        "MCP"
+      ],
+      "required_skills": [
+        "4+ years of experience in a technical role such as Forward Deployed Engineer, Product Engineer, Software Engineer, or Technical Product Manager",
+        "Production experience with LLMs, including prompt engineering, agent development and frameworks, evaluation frameworks, transcript analysis, MCP, and deployment at scale",
+        "Strong programming skills in Python or TypeScript and experience building production applications",
+        "Ability to navigate ambiguity and execute across domains",
+        "Cross-organizational collaboration and ability to balance competing priorities",
+        "Passion for advancing safe, beneficial AI systems",
+        "Exceptional communication skills for conveying technical concepts to diverse stakeholders"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003402"
+  },
+  {
+    "file": "02-anthropic-applied-ai-engineer-enterprise.txt",
+    "source": "greenhouse:anthropic/5354765008",
+    "extracted": {
+      "seniority": "senior",
+      "remote": false,
+      "stack": [
+        "Claude",
+        "Claude Platform",
+        "LLMs",
+        "GPT-3"
+      ],
+      "required_skills": [
+        "6+ years of experience as a Software Engineer, Solutions Architect, Forward Deployed Engineer, or technical founder",
+        "Pre-sales or technical advisory experience selling into large enterprises, including owning technical evaluations, proofs of concept, and security, legal, and procurement due diligence",
+        "Value-based selling and presenting business cases to C-level and VP-level stakeholders",
+        "Production experience with LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale",
+        "Familiarity with enterprise security, compliance, and architecture requirements",
+        "Ability to explain complex AI concepts clearly to technical and executive audiences"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003747"
+  },
+  {
+    "file": "03-anthropic-applied-ai-engineer-startups.txt",
+    "source": "greenhouse:anthropic/5432575008",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "Claude Developer Platform",
+        "Claude",
+        "Python",
+        "GPT-3"
+      ],
+      "required_skills": [
+        "4+ years of experience as a Software Engineer, Forward Deployed Engineer, or technical founder",
+        "Customer-facing or pre-sales technical experience scoping, designing, and delivering solutions",
+        "Production experience building LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale",
+        "Strong Python programming skills and experience building production applications",
+        "Experience working with high-growth, tech-forward companies",
+        "Ability to context-switch across industries and use cases",
+        "Experience shipping products and building credibility with technical founders and engineering leaders",
+        "Strong technical communication skills",
+        "Experience facilitating technical workshops, hackathons, or developer-focused events"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003447"
+  },
+  {
+    "file": "04-anthropic-applied-ai-engineer-public-sector.txt",
+    "source": "greenhouse:anthropic/5445410008",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "Claude",
+        "Claude Code",
+        "Claude API",
+        "Claude for Enterprise",
+        "Python",
+        "TypeScript",
+        "MCP"
+      ],
+      "required_skills": [
+        "Active TS/SCI clearance with Polygraph",
+        "Prior experience working within US intelligence community agencies as a government civilian or cleared contractor",
+        "4+ years of experience in a technical role, such as Forward Deployed Engineer, Product Engineer, Software Engineer, or Technical Product Manager",
+        "Proficiency in Python or TypeScript and experience building production applications",
+        "Hands-on expertise in at least one listed domain: cyber operations, cryptography and cryptanalysis, intelligence analysis and ISR, mission and weapons systems, CBRN and nonproliferation, or accreditation of classified systems",
+        "Exceptional communication skills for conveying technical concepts to diverse stakeholders"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003721"
+  },
+  {
+    "file": "05-databricks-ai-engineer-forward-deployed-engineering-ai-fde.txt",
+    "source": "greenhouse:databricks/8546367002",
+    "extracted": {
+      "seniority": "unknown",
+      "remote": true,
+      "stack": [
+        "HuggingFace",
+        "LangChain",
+        "DSPy",
+        "pandas",
+        "scikit-learn",
+        "PyTorch",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Databricks Intelligence Platform",
+        "Apache Spark"
+      ],
+      "required_skills": [
+        "Build GenAI applications, including RAG, multi-agent systems, Text2SQL, and fine-tuning, using tools such as HuggingFace, LangChain, and DSPy",
+        "Deploy production-grade GenAI applications, including evaluation and optimization",
+        "Hands-on industry data science experience using common machine learning and data science tools such as pandas, scikit-learn, and PyTorch",
+        "Build production-grade machine learning deployments on AWS, Azure, or GCP",
+        "Graduate degree in a quantitative discipline or equivalent practical experience",
+        "Communicate and teach technical concepts to technical and non-technical audiences",
+        "Collaborate, pursue lifelong learning, and drive business value through AI"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003573"
+  }
+]

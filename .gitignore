@@ -9,3 +9,7 @@ venv/
 
 # local chat session logs
 sessions/
+
+# data
+data/job-posts/*.txt
+/scripts
