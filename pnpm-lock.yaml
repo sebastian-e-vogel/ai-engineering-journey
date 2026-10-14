@@ -60,6 +60,25 @@ importers:
         specifier: ^4.23.15
         version: 4.23.15
 
+  01-fundamentals/tool-loop/ts:
+    dependencies:
+      '@ai-sdk/openai':
+        specifier: ^4.0.91
+        version: 4.0.91(zod@4.6.5)
+      '@journey/shared':
+        specifier: workspace:*
+        version: link:../../../shared/ts
+      ai:
+        specifier: ^7.0.137
+        version: 7.0.137(zod@4.6.5)
+      openai:
+        specifier: ^7.31.0
+        version: 7.31.0(undici@7.30.0)(zod@4.6.5)
+    devDependencies:
+      tsx:
+        specifier: ^4.23.15
+        version: 4.23.15
+
   shared/ts:
     dependencies:
       js-tiktoken:

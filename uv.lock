@@ -8,6 +8,7 @@ members = [
     "job-extraction",
     "journey-shared",
     "setup-hello",
+    "tool-loop",
 ]
 
 [[package]]
@@ -629,6 +630,17 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/c5/84/50966fb6918a0fb9b32721277e5342bf729a2d74350074d662fbedf9772e/tiktoken-0.14.0-cp315-cp315t-musllinux_1_2_x86_64.whl", hash = "sha256:149d97453c4c98c04b081d64a85e635921269b532710d6faf81e9e82b790e7d3", size = 1316673, upload-time = "2026-08-17T19:49:37.756Z" },
     { url = "https://files.pythonhosted.org/packages/35/5e/9b01afd037bfa22a0033963fa091e0f75b6fb15cd85bffb42ff86e697323/tiktoken-0.14.0-cp315-cp315t-win_amd64.whl", hash = "sha256:561e7580f84a79859af1ef6f676968e9030fcc3fe195700b15235bca64f009c9", size = 987929, upload-time = "2026-08-17T19:49:38.947Z" },
 ]
+
+[[package]]
+name = "tool-loop"
+version = "0.1.0"
+source = { virtual = "01-fundamentals/tool-loop/py" }
+dependencies = [
+    { name = "journey-shared" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "journey-shared", editable = "shared/py" }]
 
 [[package]]
 name = "truststore"

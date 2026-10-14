@@ -1,0 +1,19 @@
+{
+  "name": "tool-loop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ask": "tsx ask.ts",
+    "ask:ai-sdk": "tsx ask-ai-sdk.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.91",
+    "@journey/shared": "workspace:*",
+    "ai": "^7.0.137",
+    "openai": "^7.31.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}

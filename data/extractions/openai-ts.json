@@ -7,25 +7,23 @@
       "remote": false,
       "stack": [
         "Claude API",
-        "LLMs",
         "Python",
         "TypeScript",
-        "MCP",
-        "GPT-3"
+        "MCP"
       ],
       "required_skills": [
-        "4+ years of experience in a technical role",
-        "Production experience with LLMs, including prompt engineering, agent development and frameworks, evaluation frameworks, transcript analysis, MCP, and deployment at scale",
-        "Proficiency in Python or TypeScript",
+        "4+ years of experience in a technical role, such as Forward Deployed Engineer, Product Engineer, Software Engineer, or Technical Product Manager",
+        "Production experience with LLMs, including advanced prompt engineering, agent development and frameworks, evaluation frameworks, transcript analysis, MCP, and deployment at scale",
+        "Strong programming skills in Python or TypeScript",
         "Experience building production applications",
         "Ability to navigate ambiguity and execute across domains",
         "Cross-organizational collaboration",
-        "Strong communication skills"
+        "Exceptional communication skills for conveying technical concepts to diverse stakeholders"
       ]
     },
     "attempts": 1,
     "error": null,
-    "costUsd": "0.0003384"
+    "costUsd": "0.0003649"
   },
   {
     "file": "02-anthropic-applied-ai-engineer-enterprise.txt",
@@ -35,22 +33,20 @@
       "remote": false,
       "stack": [
         "Claude",
-        "Claude Platform",
         "LLMs"
       ],
       "required_skills": [
-        "6+ years of experience as a software engineer, solutions architect, forward deployed engineer, or technical founder",
-        "Pre-sales or technical advisory experience selling into large enterprises",
-        "Owning technical evaluations, proofs of concept, and security, legal, and procurement due diligence",
-        "Value-based selling and presenting business cases to C-level and VP-level stakeholders",
+        "6+ years of experience as a Software Engineer, Solutions Architect, Forward Deployed Engineer, or technical founder",
+        "Pre-sales or technical advisory experience selling into large enterprises, including owning technical evaluations, proofs of concept, and security, legal, and procurement due diligence",
+        "Experience with value-based selling and presenting business cases to C-level and VP-level stakeholders",
         "Production experience with LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale",
         "Familiarity with enterprise security, compliance, and architecture requirements",
-        "Ability to explain complex AI concepts to technical and executive audiences"
+        "Ability to explain complex AI concepts clearly to technical and executive audiences"
       ]
     },
     "attempts": 1,
     "error": null,
-    "costUsd": "0.0003474"
+    "costUsd": "0.0003239"
   },
   {
     "file": "03-anthropic-applied-ai-engineer-startups.txt",
@@ -61,24 +57,25 @@
       "stack": [
         "Python",
         "Claude Developer Platform",
-        "GPT-3"
+        "Claude",
+        "LLMs"
       ],
       "required_skills": [
         "4+ years of experience as a Software Engineer, Forward Deployed Engineer, or technical founder",
-        "Experience in a customer-facing or pre-sales technical role, partnering with customers to scope, design, and deliver solutions",
+        "Customer-facing or pre-sales technical experience, including scoping, designing, and delivering solutions with customers",
         "Production experience building LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale",
         "Strong programming skills and experience building production applications",
         "Experience working with high-growth, tech-forward companies",
         "Ability to context-switch across industries and use cases",
-        "Builder credibility from shipping products and working with technical founders and engineering leaders",
-        "Strong technical communication skills to translate AI concepts into architectural decisions and implementation plans",
+        "Experience shipping products and earning the trust of technical founders and engineering leaders",
+        "Strong technical communication skills, translating complex AI concepts into architectural decisions and actionable implementation plans",
         "Experience facilitating technical workshops, hackathons, or developer-focused events",
         "Passion for making powerful technology safe and beneficial"
       ]
     },
     "attempts": 1,
     "error": null,
-    "costUsd": "0.0003399"
+    "costUsd": "0.0003384"
   },
   {
     "file": "04-anthropic-applied-ai-engineer-public-sector.txt",
@@ -96,24 +93,55 @@
       ],
       "required_skills": [
         "Active TS/SCI clearance with Polygraph",
-        "Prior experience within US intelligence community agencies as a government civilian or cleared contractor",
+        "Prior experience in US intelligence community agencies as a government civilian or cleared contractor",
         "4+ years of experience in a technical role",
         "Strong programming skills in Python or TypeScript",
         "Experience building production applications",
-        "Hands-on expertise in at least one listed domain: cyber operations, cryptography and cryptanalysis, intelligence analysis and ISR, mission and weapons systems, CBRN and nonproliferation, or classified systems accreditation",
-        "Exceptional communication skills"
+        "Hands-on expertise in at least one listed domain: cyber operations, cryptography, intelligence analysis and ISR, mission and weapons systems, CBRN and nonproliferation, or classified systems accreditation",
+        "Exceptional communication skills with a collaborative approach"
       ]
     },
     "attempts": 1,
     "error": null,
-    "costUsd": "0.0003373"
+    "costUsd": "0.0003603"
   },
   {
     "file": "05-databricks-ai-engineer-forward-deployed-engineering-ai-fde.txt",
     "source": "greenhouse:databricks/8546367002",
     "extracted": {
-      "seniority": "senior",
+      "seniority": "unknown",
       "remote": true,
+      "stack": [
+        "HuggingFace",
+        "LangChain",
+        "DSPy",
+        "pandas",
+        "scikit-learn",
+        "PyTorch",
+        "AWS",
+        "Azure",
+        "GCP"
+      ],
+      "required_skills": [
+        "Building GenAI applications, including RAG, multi-agent systems, Text2SQL, and fine-tuning",
+        "Deploying production-grade GenAI applications, including evaluation and optimization",
+        "Hands-on industry data science experience using machine learning and data science tools",
+        "Building production-grade machine learning deployments on AWS, Azure, or GCP",
+        "Graduate degree in a quantitative discipline or equivalent practical experience",
+        "Communicating and teaching technical concepts to technical and non-technical audiences",
+        "Collaboration, lifelong learning, and driving business value through AI"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003375"
+  },
+  {
+    "file": "06-databricks-ai-forward-deployed-engineer-london.txt",
+    "source": "greenhouse:databricks/8593713002",
+    "extracted": {
+      "seniority": "unknown",
+      "remote": null,
       "stack": [
         "Hugging Face",
         "LangChain",
@@ -126,11 +154,7 @@
         "GCP",
         "Databricks Intelligence Platform",
         "Apache Spark",
-        "GenAI",
-        "LLMOps",
-        "RAG",
-        "Text2SQL",
-        "Databricks Genie",
+        "Genie",
         "Lakebase",
         "Agent Bricks",
         "Lakeflow",
@@ -149,6 +173,760 @@
     },
     "attempts": 1,
     "error": null,
-    "costUsd": "0.00047"
+    "costUsd": "0.0004074"
+  },
+  {
+    "file": "07-databricks-applied-ai-engineer.txt",
+    "source": "greenhouse:databricks/8091041002",
+    "extracted": {
+      "seniority": "unknown",
+      "remote": null,
+      "stack": [
+        "Databricks",
+        "Genie Code",
+        "Genie",
+        "Lakebase",
+        "Agent Bricks",
+        "Lakeflow",
+        "Lakehouse",
+        "Unity Catalog"
+      ],
+      "required_skills": [
+        "2–8 years of engineering experience in high-velocity, high-growth companies",
+        "Strong software engineering skills",
+        "Familiarity with software engineering principles around testing and deployment"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003789"
+  },
+  {
+    "file": "08-scale-ai-frontier-agents-engineer-applied-ai.txt",
+    "source": "greenhouse:scaleai/4720573005",
+    "extracted": {
+      "seniority": "mid",
+      "remote": null,
+      "stack": [
+        "Python",
+        "LLMs",
+        "OpenAI",
+        "Claude",
+        "MCP",
+        "agent frameworks",
+        "vector databases",
+        "retrieval systems",
+        "RAG",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "required_skills": [
+        "4+ years of software engineering, machine learning, or applied AI experience",
+        "Strong Python programming skills",
+        "Experience building production AI systems using LLMs",
+        "Experience with modern AI tooling, including OpenAI, Claude, MCP, agent frameworks, vector databases, or retrieval systems",
+        "Strong understanding of machine learning fundamentals and modern language models",
+        "Experience designing or evaluating AI systems using quantitative metrics",
+        "Excellent communication skills and ability to work directly with enterprise customers"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003969"
+  },
+  {
+    "file": "09-scale-ai-senior-frontier-agents-engineer-applied-ai.txt",
+    "source": "greenhouse:scaleai/4720478005",
+    "extracted": {
+      "seniority": "senior",
+      "remote": null,
+      "stack": [
+        "Python",
+        "LLMs",
+        "OpenAI",
+        "Claude",
+        "MCP",
+        "agent frameworks",
+        "vector databases",
+        "retrieval systems",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "required_skills": [
+        "5+ years of software engineering, machine learning, or applied AI experience",
+        "Strong Python programming skills",
+        "Experience building production AI systems using LLMs",
+        "Experience with modern AI tooling, including OpenAI, Claude, MCP, agent frameworks, vector databases, or retrieval systems",
+        "Strong understanding of machine learning fundamentals and modern language models",
+        "Experience designing or evaluating AI systems using quantitative metrics",
+        "Excellent communication skills and ability to work directly with enterprise customers"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0004121"
+  },
+  {
+    "file": "10-scale-ai-frontier-agents-engineer-forward-deployed-engineering.txt",
+    "source": "greenhouse:scaleai/4694861005",
+    "extracted": {
+      "seniority": "mid",
+      "remote": null,
+      "stack": [
+        "Python",
+        "LLM APIs",
+        "MCP",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "Infrastructure as Code",
+        "CI/CD"
+      ],
+      "required_skills": [
+        "Software engineering experience",
+        "Distributed systems",
+        "Data structures",
+        "Algorithms",
+        "System design",
+        "Python programming",
+        "Building production software",
+        "Building or deploying AI-powered applications",
+        "Modern LLM APIs",
+        "Agent frameworks",
+        "MCP",
+        "Retrieval systems",
+        "Vector databases",
+        "Cloud platforms",
+        "Modern production infrastructure",
+        "Problem-solving",
+        "Navigating ambiguous technical requirements",
+        "Rapid iteration",
+        "Communication skills",
+        "Working directly with enterprise engineering teams"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003944"
+  },
+  {
+    "file": "11-gitlab-senior-ai-engineer.txt",
+    "source": "greenhouse:gitlab/8565469002",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "REST APIs",
+        "GraphQL",
+        "GitLab Duo Agent Platform",
+        "Salesforce",
+        "Marketo",
+        "Zendesk",
+        "Workato",
+        "Relevance AI",
+        "Glean",
+        "Anthropic",
+        "OpenAI",
+        "RAG",
+        "n8n",
+        "Make",
+        "GitLab CI/CD"
+      ],
+      "required_skills": [
+        "Strong proficiency in at least one modern scripting language",
+        "Ability to build end-to-end solutions, write maintainable code, and debug independently",
+        "Practical experience with prompt engineering, context management, multi-turn interactions, and evaluating model output",
+        "Understanding of model selection and cost-performance trade-offs, including RAG architecture",
+        "Experience with agentic patterns, including tool use, multi-agent orchestration, human-in-the-loop designs, guardrails, evaluation, and production reliability",
+        "Hands-on experience with models from Anthropic, OpenAI, and open-source alternatives",
+        "Ability to design AI safety controls, including input validation, output filtering, access controls, prompt injection defenses, and data leakage prevention",
+        "Systems thinking and ability to map workflows, identify bottlenecks, and trace root causes",
+        "Familiarity with enterprise business systems, data models, and workflows",
+        "Ability to understand stakeholder needs across diverse functions",
+        "Track record of owning initiatives from discovery through delivery and driving measurable outcomes",
+        "Product mindset, including scoping MVPs, prioritizing, and delivering iteratively"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0004754"
+  },
+  {
+    "file": "12-gitlab-fullstack-engineer-typescript-ai-engineering-duo-client-sdk.txt",
+    "source": "greenhouse:gitlab/8698330002",
+    "extracted": {
+      "seniority": "unknown",
+      "remote": true,
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "Vue 3",
+        "Composition API",
+        "ECMAScript modules (ESM)",
+        "GitLab"
+      ],
+      "required_skills": [
+        "TypeScript proficiency across frontend and backend",
+        "Building and maintaining Node.js services",
+        "Modern build and packaging tools",
+        "Monorepos and multi-module builds",
+        "ECMAScript modules (ESM) and dependency management",
+        "Vue 3 and Composition API, or comparable component-based frontend experience",
+        "API design for other users",
+        "Understanding of code running in Node.js and browsers",
+        "Security-minded development and credential handling",
+        "Performance optimization",
+        "Clear technical writing and communication",
+        "Proposing iterative solutions",
+        "Working effectively in an agile environment",
+        "Self-motivation and strong organizational skills"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003826"
+  },
+  {
+    "file": "13-gitlab-backend-engineer-python-ai-engineering-agent-foundations.txt",
+    "source": "greenhouse:gitlab/8704363002",
+    "extracted": {
+      "seniority": "mid",
+      "remote": true,
+      "stack": [
+        "Python",
+        "LangGraph",
+        "LangChain",
+        "GraphQL",
+        "REST",
+        "gRPC",
+        "pytest",
+        "Ruby on Rails",
+        "JavaScript",
+        "Vue",
+        "GitLab monolith",
+        "AI Gateway",
+        "Duo Workflow Service",
+        "Duo CLI"
+      ],
+      "required_skills": [
+        "Building and maintaining production Python backend applications, including APIs, asynchronous or background processing, and data models",
+        "Experience with LLM application frameworks such as LangGraph, or designing and shipping AI-powered backend features or harnesses",
+        "Designing or extending APIs (REST, GraphQL, or gRPC) with attention to scalability, maintainability, and backward compatibility",
+        "Working across the stack in a mature codebase",
+        "Finding and fixing application performance bottlenecks",
+        "Clear written and verbal communication, including technical proposals and documentation, in a remote, async, cross-functional team",
+        "Openness to learning and applying skills from related technologies or fields"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003914"
+  },
+  {
+    "file": "14-gitlab-senior-backend-engineer-ai-engineering-chat.txt",
+    "source": "greenhouse:gitlab/8621733002",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "Python",
+        "LangGraph",
+        "Ruby on Rails",
+        "GraphQL",
+        "REST",
+        "pytest",
+        "RSpec",
+        "SQL",
+        "PostgreSQL",
+        "LangChain",
+        "GitLab"
+      ],
+      "required_skills": [
+        "Production Python backend development, including APIs, data models, and asynchronous or long-running workloads",
+        "Building and shipping agentic AI backend features, including LLM integration, tool or function calling, and multi-agent orchestration",
+        "Working proficiency in Ruby on Rails or willingness to learn it",
+        "Designing or extending REST or GraphQL APIs with attention to scalability, maintainability, and backward compatibility",
+        "Strong SQL skills and familiarity with relational databases such as PostgreSQL, including efficient queries and data modeling",
+        "Diagnosing and preventing performance and reliability problems at scale",
+        "Solving high-scope, complex technical problems and advocating for quality, security, and performance improvements",
+        "Learning and collaborating in an async-first, distributed team"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.000399"
+  },
+  {
+    "file": "15-gitlab-principal-engineer-duo-agent-platform.txt",
+    "source": "greenhouse:gitlab/8786095002",
+    "extracted": {
+      "seniority": "staff",
+      "remote": true,
+      "stack": [
+        "GitLab",
+        "GitLab Duo Agent Platform",
+        "Ruby",
+        "Go",
+        "Python",
+        "TypeScript",
+        "Claude Code",
+        "Codex"
+      ],
+      "required_skills": [
+        "8+ years of software engineering experience, including 3+ years at Staff, Principal level, or equivalent senior technical leadership",
+        "Production experience building and shipping systems on large language models, including agent loops, tool calling, context management, retrieval, and prompt and model evaluation",
+        "Distributed systems expertise, including service decomposition, fault tolerance, observability, and operational resilience under multi-tenant load",
+        "Experience defining evaluation frameworks and using benchmarks and experiments to guide architecture decisions",
+        "Experience designing human-in-the-loop controls, safety guardrails, and responsible AI practices",
+        "Ability to align Engineering, Product, Infrastructure, and Security on ambiguous problems",
+        "Experience mentoring senior engineers and shaping technical direction across multiple teams without direct authority",
+        "Proficiency in one or more of Ruby, Go, Python, or TypeScript, and willingness to work across the stack",
+        "Excellent written and asynchronous communication, and effectiveness in a fully remote, globally distributed organization"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003934"
+  },
+  {
+    "file": "16-figma-software-engineer-ai-product.txt",
+    "source": "greenhouse:figma/5551730004",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "GitHub Copilot",
+        "ChatGPT",
+        "Claude"
+      ],
+      "required_skills": [
+        "5+ years of software engineering experience",
+        "At least 1 year developing generative AI products",
+        "Prototyping and pathfinding opportunities that lead to successful 0-to-1 projects",
+        "Implementing the full lifecycle of early-phase AI development, from model selection through production and maintenance",
+        "Developing product and business knowledge to connect modeling and analysis with business value",
+        "Using AI-assisted development tools to write, debug, and optimize code"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003352"
+  },
+  {
+    "file": "17-figma-software-engineer-ai-product-london-united-kingdom.txt",
+    "source": "greenhouse:figma/5551697004",
+    "extracted": {
+      "seniority": "mid",
+      "remote": null,
+      "stack": [
+        "React",
+        "TypeScript",
+        "MCP",
+        "LLMs",
+        "Figma Dev Mode"
+      ],
+      "required_skills": [
+        "3+ years of experience shipping user-facing features or products as a full-stack developer",
+        "Strong fluency with React and TypeScript",
+        "Experience communicating and working across functions to proactively drive solutions",
+        "Attention to detail, quality, and craftsmanship",
+        "High velocity and a focus on user impact"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.000285"
+  },
+  {
+    "file": "18-fin-senior-product-engineer-ai.txt",
+    "source": "greenhouse:intercom/6276021",
+    "extracted": {
+      "seniority": "senior",
+      "remote": false,
+      "stack": [
+        "Python",
+        "Ruby",
+        "JavaScript",
+        "Ruby on Rails",
+        "Salesforce",
+        "machine learning",
+        "transformer neural networks"
+      ],
+      "required_skills": [
+        "5+ years of experience shipping high-quality products",
+        "Demonstrated significant impact in previous work",
+        "Strong technical fundamentals",
+        "Deep knowledge of a high-level programming language",
+        "BSc in Computer Science, Mathematics, Statistics, or a related discipline"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003429"
+  },
+  {
+    "file": "19-fin-staff-product-engineer-ai.txt",
+    "source": "greenhouse:intercom/7393955",
+    "extracted": {
+      "seniority": "staff",
+      "remote": false,
+      "stack": [
+        "Python",
+        "Ruby",
+        "JavaScript",
+        "Ruby on Rails",
+        "machine learning",
+        "transformer neural networks"
+      ],
+      "required_skills": [
+        "10+ years of experience shipping high-quality products",
+        "Deep knowledge of a high-level programming language",
+        "Strong software engineering fundamentals",
+        "BSc in Computer Science, Mathematics, Statistics, or a related discipline"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.000338"
+  },
+  {
+    "file": "20-samsara-ai-engineer-customer-success.txt",
+    "source": "greenhouse:samsara/8024110",
+    "extracted": {
+      "seniority": "mid",
+      "remote": true,
+      "stack": [
+        "Python",
+        "LLMs",
+        "Anthropic Claude",
+        "Salesforce",
+        "Gainsight",
+        "APIs",
+        "Samsara platform"
+      ],
+      "required_skills": [
+        "Hands-on experience building and maintaining production LLM-based agents or automations",
+        "Python proficiency and experience connecting AI to external systems, including CRMs, APIs, customer data, and operational tools",
+        "Ability to define success criteria and build evaluation frameworks before development",
+        "Curiosity about Customer Success workflows and customer problems",
+        "Judgment to design AI guardrails and fallback paths",
+        "3+ years of software engineering or technical experience, including at least 1 year working hands-on with LLMs or AI agents in production",
+        "Experience in a B2B SaaS environment"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0004684"
+  },
+  {
+    "file": "21-samsara-finance-strategy-ai-engineer.txt",
+    "source": "greenhouse:samsara/8113356",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "Python",
+        "SQL",
+        "Databricks",
+        "NetSuite",
+        "Workday",
+        "Workday Adaptive Planning",
+        "Adaptive",
+        "Salesforce",
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Google Suite",
+        "Slack",
+        "LLMs"
+      ],
+      "required_skills": [
+        "8+ years of experience building and scaling production-grade data pipelines, integrations, and enterprise applications",
+        "Strong engineering fundamentals and ability to independently design and deliver solutions",
+        "Hands-on experience with LLM applications, including prompt engineering, retrieval-augmented generation, agentic workflows, and evaluation",
+        "Proficiency in Python for scripting, data manipulation, and interacting with APIs",
+        "Experience with SQL databases, data modeling, and query optimization",
+        "Experience with data platforms and warehouses and the enterprise systems that feed them",
+        "Working knowledge of financial planning, forecasting, and close processes",
+        "Excellent collaboration and communication skills with technical and non-technical stakeholders, including presenting to senior management"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0004317"
+  },
+  {
+    "file": "22-glean-founding-forward-deployed-engineer.txt",
+    "source": "greenhouse:gleanwork/4651991005",
+    "extracted": {
+      "seniority": "mid",
+      "remote": true,
+      "stack": [
+        "LLMs",
+        "APIs",
+        "Microsoft Teams",
+        "Zoom",
+        "ServiceNow",
+        "Zendesk",
+        "GitHub"
+      ],
+      "required_skills": [
+        "4+ years in technical roles with a track record of shipping production software",
+        "Building production software from scratch in ambiguous environments",
+        "Production AI experience, including prompt engineering, agent development, evaluation frameworks, and deployment at scale",
+        "Strong programming skills across the stack",
+        "Understanding of enterprise systems",
+        "Business acumen and ability to identify customer problems and form product hypotheses",
+        "Customer communication and relationship-building skills",
+        "Judgment about feasibility, scope, and production delivery",
+        "Curiosity and resourcefulness",
+        "Willingness to travel 25–50%"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0004128"
+  },
+  {
+    "file": "23-glean-software-engineer-agents.txt",
+    "source": "greenhouse:gleanwork/4712442005",
+    "extracted": {
+      "seniority": "senior",
+      "remote": false,
+      "stack": [
+        "Go",
+        "Python",
+        "Java",
+        "TypeScript",
+        "Microsoft Teams",
+        "Zoom",
+        "ServiceNow",
+        "Zendesk",
+        "GitHub",
+        "LLMs"
+      ],
+      "required_skills": [
+        "BA/BS in computer science or a related degree",
+        "6+ years of experience building product software",
+        "Strong coding skills in Go, Python, Java, or TypeScript",
+        "Ability to build reliable, well-tested systems",
+        "Strong product sense",
+        "Comfort working across user-facing experiences and backend systems"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0003299"
+  },
+  {
+    "file": "24-vercel-software-engineer-agentic-infrastructure.txt",
+    "source": "greenhouse:vercel/6199608004",
+    "extracted": {
+      "seniority": "mid",
+      "remote": false,
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "AWS",
+        "Terraform",
+        "React",
+        "Next.js",
+        "DynamoDB"
+      ],
+      "required_skills": [
+        "3+ years designing, building, and operating backend applications and distributed systems at scale",
+        "Proficiency in JavaScript/TypeScript",
+        "Proficiency with AWS cloud infrastructure",
+        "Proficiency with Terraform infrastructure as code",
+        "End-to-end ownership from design and implementation through production operation",
+        "Cross-team collaboration and alignment",
+        "Reasoning about technical direction and architectural tradeoffs",
+        "Mentorship and code review"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0002887"
+  },
+  {
+    "file": "25-vercel-software-engineer-ai-gateway.txt",
+    "source": "greenhouse:vercel/5798406004",
+    "extracted": {
+      "seniority": "senior",
+      "remote": false,
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "AI SDK"
+      ],
+      "required_skills": [
+        "5+ years of relevant experience",
+        "Proficiency in JavaScript/TypeScript",
+        "Backend development",
+        "APIs",
+        "Cloud infrastructure",
+        "AI/ML integrations",
+        "API gateways",
+        "Distributed systems",
+        "High-throughput services",
+        "Rate limiting",
+        "Caching",
+        "Failovers",
+        "Open-source contributions or participation",
+        "Excellent communication skills",
+        "Collaborative teamwork"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0002504"
+  },
+  {
+    "file": "26-vercel-forward-deployed-engineer.txt",
+    "source": "greenhouse:vercel/5752684004",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Vue",
+        "AI SDK",
+        "eve framework",
+        "Model Context Protocol (MCP)"
+      ],
+      "required_skills": [
+        "6+ years of software engineering experience, including 2+ years in a customer-facing technical role",
+        "Shipped production TypeScript applications using Next.js and React, including a legacy-to-Next.js migration, or built and deployed production LLM agents with human-in-the-loop patterns and sandboxed execution",
+        "Built and deployed web applications, backend systems, or agentic workflows using AI coding tools such as harnesses, skills, and MCP servers",
+        "Presented technical discovery findings and proposals to enterprise customer executives",
+        "Mentored other engineers"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0002788"
+  },
+  {
+    "file": "27-langchain-fullstack-engineer-ai-observability-evals-platform-langsmith.txt",
+    "source": "ashby:langchain/ddf92275-1cc3-49c0-9f25-e8ded43b07f6",
+    "extracted": {
+      "seniority": "junior",
+      "remote": false,
+      "stack": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "React",
+        "Postgres",
+        "Redis"
+      ],
+      "required_skills": [
+        "2+ years of software engineering experience on complex platform products",
+        "Full-stack engineering with Go or Python on the backend and React with TypeScript on the frontend",
+        "Understanding of database systems, particularly Postgres and Redis",
+        "Experience designing and scaling APIs",
+        "Ownership and ability to ship quickly and iterate based on user feedback",
+        "Strong communication and collaboration with stakeholders and customers"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0002623"
+  },
+  {
+    "file": "28-langchain-senior-frontend-engineer-ai-observability-evals-platform.txt",
+    "source": "ashby:langchain/afb91b9b-46d5-4c9d-aa84-a4f1a3f74263",
+    "extracted": {
+      "seniority": "senior",
+      "remote": true,
+      "stack": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Babel",
+        "Vite",
+        "Webpack",
+        "NPM",
+        "Yarn",
+        "REST APIs",
+        "JWTs",
+        "LangSmith",
+        "LangChain",
+        "LangGraph",
+        "Deep Agents"
+      ],
+      "required_skills": [
+        "Extensive front-end engineering experience",
+        "Strong proficiency in React, JavaScript, and TypeScript",
+        "Hands-on experience with front-end development tools such as Babel, Vite, Webpack, NPM, and Yarn",
+        "Familiarity with REST APIs and experience working closely with full-stack and backend engineers",
+        "Knowledge of modern authorization mechanisms such as JWTs",
+        "Passion for user experience, design, and building clean, engaging, intuitive interfaces",
+        "Strong written and oral communication skills",
+        "Ability to explain technical concepts clearly to technical and non-technical stakeholders",
+        "Ability to thrive in a startup, fast-paced environment",
+        "Ownership mindset and self-direction",
+        "Strong computer science fundamentals"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.000276"
+  },
+  {
+    "file": "29-perplexity-member-of-technical-staff-software-engineer-applied-ai.txt",
+    "source": "ashby:perplexity/3c656963-876a-458d-bca6-916a42a24c1a",
+    "extracted": {
+      "seniority": "staff",
+      "remote": null,
+      "stack": [
+        "Python",
+        "LLMs"
+      ],
+      "required_skills": []
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0001844"
+  },
+  {
+    "file": "30-elevenlabs-full-stack-engineer.txt",
+    "source": "ashby:elevenlabs/6a530871-b6c6-4783-ac6b-69cc3b084192",
+    "extracted": {
+      "seniority": "unknown",
+      "remote": true,
+      "stack": [
+        "Python",
+        "TypeScript",
+        "React"
+      ],
+      "required_skills": [
+        "Expertise in Python",
+        "Web development with TypeScript and React",
+        "Familiarity with common software and system design patterns",
+        "Familiarity with APIs, cloud infrastructure tools, storage solutions, and data structures"
+      ]
+    },
+    "attempts": 1,
+    "error": null,
+    "costUsd": "0.0002686"
   }
 ]
