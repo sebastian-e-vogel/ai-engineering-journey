@@ -1,6 +1,7 @@
 import type OpenAI from "openai";
 import { MODEL, openai } from "@journey/shared";
-import { INSTRUCTIONS, MAX_STEPS, TOOLS, readQuestion } from "./tools";
+import { INSTRUCTIONS, MAX_STEPS, TOOLS } from "@journey/job-tools";
+import { readQuestion } from "./cli";
 import { createTrace, type ToolCall } from "./trace";
 
 const question = readQuestion("pnpm ask");

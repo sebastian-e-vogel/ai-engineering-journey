@@ -7,7 +7,7 @@ import {
   usd,
   type TokenUsage,
 } from "@journey/shared";
-import { MAX_STEPS, TOOLS } from "./tools";
+import { MAX_STEPS, TOOLS } from "@journey/job-tools";
 
 export type ToolCall = {
   callId: string;

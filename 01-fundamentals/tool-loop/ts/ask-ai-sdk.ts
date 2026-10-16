@@ -1,35 +1,18 @@
 import { openai as openaiProvider } from "@ai-sdk/openai";
-import {
-  generateText,
-  isStepCount,
-  jsonSchema,
-  tool,
-  type JSONSchema7,
-} from "ai";
+import { generateText, isStepCount } from "ai";
 import { MODEL } from "@journey/shared";
-import { INSTRUCTIONS, MAX_STEPS, TOOLS, readQuestion } from "./tools";
+import { INSTRUCTIONS, MAX_STEPS, aiSdkTools } from "@journey/job-tools";
+import { readQuestion } from "./cli";
 import { createTrace, type ToolCall } from "./trace";
 
 const question = readQuestion("pnpm ask:ai-sdk");
 const trace = createTrace("ai-sdk", question);
 
-const tools = Object.fromEntries(
-  Object.entries(TOOLS).map(([name, { description, parameters, execute }]) => [
-    name,
-    tool({
-      description,
-      inputSchema: jsonSchema(parameters as JSONSchema7),
-      execute,
-      strict: true,
-    }),
-  ]),
-);
-
 const result = await generateText({
   model: openaiProvider(MODEL),
   instructions: INSTRUCTIONS,
   prompt: question,
-  tools,
+  tools: aiSdkTools(),
   stopWhen: [isStepCount(MAX_STEPS)],
   onStepEnd: (step) =>
     trace.step({

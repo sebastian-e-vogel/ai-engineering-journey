@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^4.0.91",
+    "@journey/job-tools": "workspace:*",
     "@journey/shared": "workspace:*",
-    "ai": "^7.0.137",
+    "ai": "^7.0.140",
     "openai": "^7.31.0"
   },
   "devDependencies": {

@@ -5,6 +5,7 @@ Daily log of my AI engineering journey: from fullstack JS to AI Engineer in 16 w
 ## Structure
 
 - `shared/` — code reused by every exercise: config and prices, streaming call, token estimate, cost, metrics, session logs (TS: `@journey/shared`, Python: `journey_shared`)
+- `packages/` — libraries shared by several exercises (`@journey/job-tools`: the 1.4 job tools, used by 1.4 and 1.5)
 - `00-setup/` — first API call with streaming, token usage, latency and cost (TS + Python)
 - `01-fundamentals/` — LLM fundamentals, structured outputs, tool calling, first evals
 - `02-rag/` — retrieval-augmented generation with Postgres + pgvector
@@ -162,5 +163,35 @@ Daily log of my AI engineering journey: from fullstack JS to AI Engineer in 16 w
   - [x] Question 4 showed several calls in one response at least once (Python run), processed correctly.
   - [x] Question 6 doesn't break the program.
   - [x] Every run left its JSON trace (`ts/sessions/`, `py/sessions/`).
-
 - **Conclusion:** the tool loop is small and not magic: call the model, run what it asks for, send back the results with their `call_id`, repeat until it stops asking or I stop it. The framework hides that loop but sends exactly the same request, and in my code it saved only 11 lines because adapting its steps to my trace costs almost as much as the loop. What decides cost and quality is not the library: the tool definitions are ~75% of every first request, a vague question can turn into 11 tool calls, and the model's strategy changes between runs. The descriptions and instructions are the real prompt of a tool-using assistant, and they need evals like any other prompt.
+
+### 2026-10-14 — 1.5 Jobs chat (`01-fundamentals/jobs-chat`)
+
+- **What I did:**
+  - Moved the 1.4 tools into a workspace package, `@journey/job-tools` (`packages/job-tools/`): the same `TOOLS` map, `INSTRUCTIONS` and `MAX_STEPS`, plus `aiSdkTools(names?)` (the `tool({ inputSchema: jsonSchema(...), strict: true })` wrapper that lived in `ask-ai-sdk.ts`). 1.4 now imports it instead of `./tools`.
+  - A Next.js App Router app (`pnpm dev` in `01-fundamentals/jobs-chat`) with a chat over the job posts, using three of the tools: `search_jobs`, `get_job_details`, `count_technologies`.
+  - Server: `app/api/chat/route.ts` receives the whole conversation as `UIMessage[]`, turns it into model messages with `convertToModelMessages`, calls `streamText` with the tools and `stopWhen: [isStepCount(MAX_STEPS)]` (5 by default), and returns `createUIMessageStreamResponse({ stream: toUIMessageStream({ stream: result.stream }) })`. It stores nothing.
+  - Client: `useChat` with `DefaultChatTransport`. Text parts render as they arrive, as plain text with any `http(s)://` URL turned into a link. Tool parts render as cards with the name, the arguments, the state ("Searching job posts…" → "4 results") and the result in a `<details>`. Enter sends, Stop calls `stop()`, and errors show a banner with Retry (`regenerate()`).
+  - Metrics: `onEnd` logs one `formatMetrics` line per answer in the server console (tokens, TTFT, total time, USD, steps, tool calls with their names). `onAbort` logs `[aborted]`.
+- **What I learned:**
+  - The whole loop from 1.4 still runs on the server. What changes is that every step is streamed: `streamText` emits text deltas and tool input/call/result events, `toUIMessageStream` turns them into UI message chunks over SSE, and `useChat` folds the chunks into `message.parts`.
+  - A tool call is one part that changes state in place: `input-streaming` → `input-available` → `output-available` (or `output-error`). The card is just a render of that state.
+  - Memory is the same as 1.2: the browser holds the history and sends all of it every time. A follow-up works because the previous tool calls and results travel back in the messages.
+  - Stop aborts the fetch, and with `abortSignal: req.signal` the abort reaches the OpenAI call. A tool call cut in half has no result, so the next request needs `ignoreIncompleteToolCalls: true`, and the UI must show it as cancelled instead of spinning forever.
+  - Errors in the stream are masked by default. `toUIMessageStream({ onError })` decides what the user sees (a 401 becomes "The OpenAI API key is invalid or missing"), and the full error stays in the server log.
+- **Test questions** (`gpt-6-luna`):
+
+| #   | Question                                               | Tools called                                            | Steps                                   | Result                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --- | ------------------------------------------------------ | ------------------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | "Which senior remote jobs require Python?"             | 1 (search_jobs)                                         | 2                                       | Senior remote jobs requiring Python: Senior AI Engineer at GitLab (id 11), remote in the US. Senior Backend Engineer, AI Engineering: Chat at GitLab (id 14), remote in Canada or the United Kingdom. Finance & Strategy AI Engineer at Samsara (id 21), remote, location listed as San Francisco - SF9.                                                                                                                                                              |
+| 2   | Follow-up: "What's the stack of the first one?"        | 1 (get_job_details)                                     | 2                                       | The stack for Senior AI Engineer (id 11) includes Python, JavaScript, TypeScript, REST APIs, GraphQL, GitLab Duo Agent Platform, Salesforce, Marketo, Zendesk, Workato, Relevance AI, Glean, Anthropic, OpenAI, RAG, n8n, Make, and GitLab CI/CD.                                                                                                                                                                                                                     |
+| 3   | Stop in the middle of an answer, then a new question   | 1 (get_job_details - aborted query) 1 (get_job_details) | 1 (aborted query) 2 (non aborted query) | [aborted] after 1 finished steps, 1719 ms --- non aborted: Applied AI Engineer (id 07) Company: Databricks Location: Belgrade, Serbia Seniority: Not stated Remote: Not specified URL: **[https://databricks.com/company/careers/open-positions/job?gh_jid=8091041002](https://databricks.com/company/careers/open-positions/job?gh_jid=8091041002)** Technologies listed: Databricks, Genie Code, Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, Unity Catalog. |
+| 4   | Invalid API key (`OPENAI_API_KEY=sk-invalid pnpm dev`) | 0                                                       | 0                                       | The OpenAI API key is invalid or missing (401). Check OPENAI_API_KEY in the root .env.                                                                                                                                                                                                                                                                                                                                                                                |
+
+- **Approval criteria:**
+  - [x] Tool cards show the "running" state and the result.
+  - [x] Stop cuts the generation without breaking the UI.
+  - [x] The follow-up question works.
+  - [x] With an invalid API key there's a readable error, not a blank screen.
+
+- **Conclusion:** a chat is the 1.4 tool loop plus two things: streaming and a history that lives in the browser. The server is almost the same `streamText` call; what’s new is the protocol (`UIMessage` parts over SSE) and the states the UI has to handle: a tool running, a tool cut by Stop, an error in the middle of the stream. The history is what makes follow-ups work (“the first one” → id 11 → `get_job_details`), but it isn’t free: every turn resends the whole conversation, old tool results included, and every step pays for it again, so input tokens grow with each question.

@@ -9,16 +9,7 @@ export const INSTRUCTIONS = `You answer questions about a fixed set of AI engine
 - Cite the id of every job you mention, e.g. "Applied AI Engineer (id 08)".
 - If a search returns no results, say so.
 - If the data doesn't cover what is asked (e.g. salary), say you don't know.
-- If the question is not about these job posts, say so without calling any tool.`;
-
-export function readQuestion(command: string): string {
-  const question = process.argv[2]?.trim();
-  if (!question) {
-    console.error(`Usage: ${command} "<question>"`);
-    process.exit(1);
-  }
-  return question;
-}
+- If the question is not about these job posts, say so without calling any tool. And you don't answer the question, just say you can answer questions about job posts only.`;
 
 const POSTS_DIR = path.join(ROOT_DIR, "data/job-posts");
 const EXTRACTIONS_FILE = path.join(ROOT_DIR, "data/extractions/openai-ts.json");

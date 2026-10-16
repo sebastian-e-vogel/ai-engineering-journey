@@ -3,3 +3,5 @@
 packages:
   - "*/ts"     # shared/ts, 00-setup/ts
   - "*/*/ts"   # 01-fundamentals/chat-cli/ts and every future exercise
+  - "packages/*"                  # shared libraries, e.g. @journey/job-tools
+  - "01-fundamentals/jobs-chat"   # Next.js app (1.5)
